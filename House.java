@@ -59,7 +59,7 @@ public class House
      * 
      * @param theYear is the year that house built in
      */
-    public final void setYear(int theYear){
+    public void setYear(int theYear){
         if(theYear >= MIN_YEAR && theYear <= MAX_YEAR){
             year = theYear;
         }else{
@@ -71,7 +71,7 @@ public class House
      * mutator setSize sets the size of the house in square feet
      * @param theSize is the size for the house in square feet
      */
-    public final void setSize(double theSize){
+    public void setSize(double theSize){
         if(theSize >= MIN_SIZE){
             sizeInSquareFeet = theSize;
         }else{
@@ -83,7 +83,7 @@ public class House
      * mutator setNeighborhood sets the neighborhood of the house
      * @param theNeighborhood is the neighborhood of the house
      */
-    public final void setNeighborhood(String theNeighborhood){
+    public void setNeighborhood(String theNeighborhood){
         if(theNeighborhood != null ){
             neighborhood = theNeighborhood;
         }else{   
@@ -113,7 +113,7 @@ public class House
      * mutator setNumBathrooms sets the value for the bathroom numbers in the house
      * @param bathroomNumbers is the value for bathroom numbers in the house
      */
-    public final void setNumBathrooms(double bathroomNumbers){
+    public void setNumBathrooms(double bathroomNumbers){
         if(bathroomNumbers >= MIN_BATHROOM){
             numberOfBathrooms = bathroomNumbers;
         }else{
@@ -133,7 +133,7 @@ public class House
      * mutator setPictureGallery sets the picture gallery rules
      * @param thePictureGallery are the picture gallery rules
      */
-    public final void setPictureGallery(String thePictureGallery){
+    public void setPictureGallery(String thePictureGallery){
         
         if(thePictureGallery == null){
             
