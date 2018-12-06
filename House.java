@@ -200,11 +200,14 @@ public class House
     }
 
     public String getHouseDetails(){
-        String display = "";
-        display = "This " + TYPE + " was built in "+ getYear() + " with " + getSize() + " square feet of space, " + getNumBedrooms() + " and " + getNumBathrooms() + 
+        
+        if(view) {
+            return "This " + TYPE + " was built in "+ getYear() + " with " + getSize() + " square feet of space, " + getNumBedrooms() + " and " + getNumBathrooms() + 
             " bathrooms. It has a spectacular View. You can see pictures of this house at " + getPictureGallery();
-
-        return display;
+        }else{
+             return "This " + TYPE + " was built in "+ getYear() + " with " + getSize() + " square feet of space, " + getNumBedrooms() + " and " + getNumBathrooms() + 
+            " bathrooms. It is situated in a fantastic location. You can see pictures of this house at " + getPictureGallery();
+        }
     }
 }
 
