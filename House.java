@@ -16,7 +16,7 @@ public class House
     private static final double MIN_BATHROOM = 2.5;
 
     // Class  (static) variables
-    public static String TYPE = "Mansion";
+    public static final String TYPE = "Mansion";
     private static String pictureGallery = "www.mansion.com/gallery ";
 
     //instance variables 
